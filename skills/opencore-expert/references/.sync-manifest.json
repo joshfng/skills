@@ -1,0 +1,37 @@
+{
+  "generator": "scripts/sync_dortania.py",
+  "sources": {
+    "Getting-Started-With-ACPI": {
+      "commit": "60029d4fff6d56e210e5f682f6dd6508c4bb3343",
+      "commit_date": "2024-08-11T02:46:04Z",
+      "license": "See the upstream repository. Dortania guides are CC BY-NC-SA 4.0.",
+      "pages": 56,
+      "ref": "master",
+      "repo": "dortania/Getting-Started-With-ACPI"
+    },
+    "OpenCore-Install-Guide": {
+      "commit": "6680f2df86de1283083b0208e8a8042fa1952b2c",
+      "commit_date": "2026-03-15T16:57:33Z",
+      "license": "See the upstream repository. Dortania guides are CC BY-NC-SA 4.0.",
+      "pages": 74,
+      "ref": "master",
+      "repo": "dortania/OpenCore-Install-Guide"
+    },
+    "OpenCore-Legacy-Patcher": {
+      "commit": "1500ba6ed83934ea52bb13b9e3a2a1710bb96dd9",
+      "commit_date": "2026-08-13T18:23:10Z",
+      "license": "See the upstream repository. Dortania guides are CC BY-NC-SA 4.0.",
+      "pages": 31,
+      "ref": "main",
+      "repo": "dortania/OpenCore-Legacy-Patcher"
+    },
+    "OpenCore-Post-Install": {
+      "commit": "6efd820293a1ee4d4597d58afb59afd8f4266f36",
+      "commit_date": "2024-08-11T02:47:58Z",
+      "license": "See the upstream repository. Dortania guides are CC BY-NC-SA 4.0.",
+      "pages": 41,
+      "ref": "master",
+      "repo": "dortania/OpenCore-Post-Install"
+    }
+  }
+}

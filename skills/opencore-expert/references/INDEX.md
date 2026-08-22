@@ -1,0 +1,215 @@
+# Reference Index
+
+Every synced Dortania page, by path. Grep this file to route to a file,
+then read only that file. Regenerate with `scripts/sync_dortania.py`.
+
+## Getting-Started-With-ACPI
+
+- `Getting-Started-With-ACPI/Desktops/desktop-disable.md` — Disabling desktops unsupported GPUs(SSDT-GPU-DISABLE)
+- `Getting-Started-With-ACPI/Desktops/desktop-ec.md` — Fixing Embedded Controller (Desktop)
+- `Getting-Started-With-ACPI/Laptops/backlight-methods/manual.md` — Fixing Backlight: Manual
+- `Getting-Started-With-ACPI/Laptops/backlight-methods/prebuilt.md` — Fixing Backlight: Prebuilt
+- `Getting-Started-With-ACPI/Laptops/backlight-methods/ssdttime.md` — Fixing Backlight: SSDTTime Method
+- `Getting-Started-With-ACPI/Laptops/backlight.md` — Fixing Backlight (SSDT-PNLF)
+- `Getting-Started-With-ACPI/Laptops/laptop-disable.md` — Disabling laptop dGPUs (SSDT-dGPU-Off/NoHybGfx)
+- `Getting-Started-With-ACPI/Laptops/laptop-ec.md` — Fixing Embedded Controller (Laptop)
+- `Getting-Started-With-ACPI/Laptops/trackpad-methods/manual.md` — Fixing Trackpads: Manual
+- `Getting-Started-With-ACPI/Laptops/trackpad-methods/prebuilt.md` — Fixing Trackpads: Prebuilt
+- `Getting-Started-With-ACPI/Laptops/trackpad-methods/ssdttime.md` — Fixing Trackpads: SSDTTime Method
+- `Getting-Started-With-ACPI/Laptops/trackpad.md` — Fixing Trackpads (SSDT-GPI0/XOSI)
+- `Getting-Started-With-ACPI/Manual/compile.md` — Compiling and decompiling ACPI Tables
+- `Getting-Started-With-ACPI/Manual/dump.md` — Getting a copy of your DSDT
+- `Getting-Started-With-ACPI/README.md` — Getting started with ACPI
+- `Getting-Started-With-ACPI/SUMMARY.md` — Table of contents
+- `Getting-Started-With-ACPI/Universal/awac-methods/manual-hedt.md` — Fixing System Clocks on HEDT: Manual
+- `Getting-Started-With-ACPI/Universal/awac-methods/manual.md` — Fixing System Clocks: Manual
+- `Getting-Started-With-ACPI/Universal/awac-methods/prebuilt.md` — Fixing System Clocks: Prebuilt
+- `Getting-Started-With-ACPI/Universal/awac-methods/ssdttime.md` — Fixing System Clocks (SSDT-AWAC/RTC0)
+- `Getting-Started-With-ACPI/Universal/awac.md` — Fixing System Clocks (SSDT-AWAC/RTC0)
+- `Getting-Started-With-ACPI/Universal/dmar-methods/manual.md` — Patching DMAR Table: Manual
+- `Getting-Started-With-ACPI/Universal/dmar.md` — Patching DMAR Table (DMAR.aml)
+- `Getting-Started-With-ACPI/Universal/ec-fix.md` — Fixing Embedded Controller (SSDT-EC/USBX)
+- `Getting-Started-With-ACPI/Universal/ec-methods/manual.md` — Fixing Embedded Controllers: Manual
+- `Getting-Started-With-ACPI/Universal/ec-methods/prebuilt.md` — Fixing Embedded Controllers: Prebuilt
+- `Getting-Started-With-ACPI/Universal/ec-methods/ssdttime.md` — Fixing Embedded Controllers: SSDTTime
+- `Getting-Started-With-ACPI/Universal/imei-methods/manual.md` — Fixing IMEI: Manual
+- `Getting-Started-With-ACPI/Universal/imei-methods/prebuilt.md` — Fixing IMEI: Prebuilt
+- `Getting-Started-With-ACPI/Universal/imei.md` — Fixing IMEI (SSDT-IMEI)
+- `Getting-Started-With-ACPI/Universal/irq.md` — Fixing IRQ Conflicts (SSDT-HPET + OC_Patches.plist)
+- `Getting-Started-With-ACPI/Universal/nvram-methods/manual.md` — Fixing NVRAM: Manual
+- `Getting-Started-With-ACPI/Universal/nvram-methods/prebuilt.md` — Fixing NVRAM: Prebuilt
+- `Getting-Started-With-ACPI/Universal/nvram-methods/ssdttime.md` — Fixing NVRAM (SSDT-PMC)
+- `Getting-Started-With-ACPI/Universal/nvram.md` — Fixing NVRAM (SSDT-PMC)
+- `Getting-Started-With-ACPI/Universal/plug-methods/manual.md` — Fixing Power Management: Manual
+- `Getting-Started-With-ACPI/Universal/plug-methods/prebuilt.md` — Fixing Power Management: Prebuilt
+- `Getting-Started-With-ACPI/Universal/plug-methods/ssdttime.md` — Fixing Power Management: SSDTTime
+- `Getting-Started-With-ACPI/Universal/plug.md` — Fixing Power Management (SSDT-PLUG)
+- `Getting-Started-With-ACPI/Universal/rhub-methods/manual.md` — Fixing USB: Manual
+- `Getting-Started-With-ACPI/Universal/rhub-methods/prebuilt.md` — Fixing USB: Prebuilt
+- `Getting-Started-With-ACPI/Universal/rhub-methods/ssdttime.md` — Fixing RHUB: SSDTTime
+- `Getting-Started-With-ACPI/Universal/rhub.md` — Fixing USB
+- `Getting-Started-With-ACPI/Universal/smbus-methods/manual.md` — Fixing SMBus support: Manual
+- `Getting-Started-With-ACPI/Universal/smbus.md` — Fixing SMBus support (SSDT-SBUS-MCHC)
+- `Getting-Started-With-ACPI/Universal/spoof.md` — Renaming GPUs (SSDT-GPU-SPOOF)
+- `Getting-Started-With-ACPI/Universal/unc0-methods/manual.md` — Fixing Uncore Bridges: Manual
+- `Getting-Started-With-ACPI/Universal/unc0-methods/prebuilt.md` — Fixing Uncore Bridges: Prebuilt
+- `Getting-Started-With-ACPI/Universal/unc0.md` — Fixing Uncore Bridges (SSDT-UNC)
+- `Getting-Started-With-ACPI/cleanup.md` — Cleanup
+- `Getting-Started-With-ACPI/ssdt-methods/ssdt-easy.md` — SSDTs: The easy way
+- `Getting-Started-With-ACPI/ssdt-methods/ssdt-long.md` — SSDTs: The long way
+- `Getting-Started-With-ACPI/ssdt-methods/ssdt-methods.md` — How to create SSDTs
+- `Getting-Started-With-ACPI/ssdt-methods/ssdt-prebuilt.md` — Prebuilt SSDTs
+- `Getting-Started-With-ACPI/ssdt-platform.md` — What SSDTs do each platform need
+- `Getting-Started-With-ACPI/troubleshooting.md` — Troubleshooting
+## OpenCore-Install-Guide
+
+- `OpenCore-Install-Guide/AMD/AMD-USB-map.md` — AMD USB Map
+- `OpenCore-Install-Guide/AMD/fx.md` — Bulldozer(15h) and Jaguar(16h)
+- `OpenCore-Install-Guide/AMD/zen.md` — Ryzen and Threadripper(17h and 19h)
+- `OpenCore-Install-Guide/LICENSE.md` — Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+- `OpenCore-Install-Guide/README.md` — What is OpenCore and who is this guide for
+- `OpenCore-Install-Guide/clover-conversion/Clover-boot-arg.md` — Clover Boot Arg Conversion
+- `OpenCore-Install-Guide/clover-conversion/Clover-config.md` — Converting common properties from Clover to OpenCore
+- `OpenCore-Install-Guide/clover-conversion/README.md` — Converting from Clover to OpenCore
+- `OpenCore-Install-Guide/clover-conversion/clover-efi.md` — Clover Kexts and Firmware driver conversion(.kext, .efi)
+- `OpenCore-Install-Guide/clover-conversion/clover-patch.md` — Converting common Kernel and Kext patches
+- `OpenCore-Install-Guide/config-HEDT/broadwell-e.md` — Broadwell-E
+- `OpenCore-Install-Guide/config-HEDT/haswell-e.md` — Haswell-E
+- `OpenCore-Install-Guide/config-HEDT/ivy-bridge-e.md` — Sandy and Ivy Bridge-E
+- `OpenCore-Install-Guide/config-HEDT/nehalem.md` — Nehalem and Westmere
+- `OpenCore-Install-Guide/config-HEDT/skylake-x.md` — Skylake-X/W and Cascade Lake-X/W
+- `OpenCore-Install-Guide/config-laptop.plist/arrandale.md` — Laptop Clarksfield and Arrandale
+- `OpenCore-Install-Guide/config-laptop.plist/broadwell.md` — Laptop Broadwell
+- `OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.md` — Laptop Coffee Lake Plus and Comet Lake
+- `OpenCore-Install-Guide/config-laptop.plist/coffee-lake.md` — Laptop Coffee Lake and Whiskey Lake
+- `OpenCore-Install-Guide/config-laptop.plist/haswell.md` — Laptop Haswell
+- `OpenCore-Install-Guide/config-laptop.plist/icelake.md` — Laptop Icelake
+- `OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.md` — Laptop Ivy Bridge
+- `OpenCore-Install-Guide/config-laptop.plist/kaby-lake.md` — Laptop Kaby Lake & Amber Lake Y
+- `OpenCore-Install-Guide/config-laptop.plist/sandy-bridge.md` — Laptop Sandy Bridge
+- `OpenCore-Install-Guide/config-laptop.plist/skylake.md` — Laptop Skylake
+- `OpenCore-Install-Guide/config.plist/README.md` — config.plist Setup
+- `OpenCore-Install-Guide/config.plist/clarkdale.md` — Desktop Lynnfield and Clarkdale
+- `OpenCore-Install-Guide/config.plist/coffee-lake.md` — Desktop Coffee Lake
+- `OpenCore-Install-Guide/config.plist/comet-lake.md` — Desktop Comet Lake
+- `OpenCore-Install-Guide/config.plist/haswell.md` — Desktop Haswell and Broadwell
+- `OpenCore-Install-Guide/config.plist/ivy-bridge.md` — Desktop Ivy Bridge
+- `OpenCore-Install-Guide/config.plist/kaby-lake.md` — Desktop Kaby Lake
+- `OpenCore-Install-Guide/config.plist/penryn.md` — Desktop Yonah, Conroe and Penryn
+- `OpenCore-Install-Guide/config.plist/sandy-bridge.md` — Desktop Sandy Bridge
+- `OpenCore-Install-Guide/config.plist/security.md` — Apple Secure Boot
+- `OpenCore-Install-Guide/config.plist/skylake.md` — Desktop Skylake
+- `OpenCore-Install-Guide/extras/big-sur/README.md` — OpenCore and macOS 11: Big Sur
+- `OpenCore-Install-Guide/extras/big-sur/fusion.md` — VMware Fusion
+- `OpenCore-Install-Guide/extras/big-sur/virtualbox.md` — VirtualBox
+- `OpenCore-Install-Guide/extras/big-sur/workstation.md` — Soon™
+- `OpenCore-Install-Guide/extras/kaslr-fix.md` — Fixing KASLR slide values
+- `OpenCore-Install-Guide/extras/legacy.md` — Legacy Install
+- `OpenCore-Install-Guide/extras/monterey.md` — macOS 12: Monterey
+- `OpenCore-Install-Guide/extras/smbios-support.md` — Choosing the right SMBIOS
+- `OpenCore-Install-Guide/extras/smbios.md` — Selecting the right SMBIOS
+- `OpenCore-Install-Guide/extras/spoof.md` — Disabling GPU
+- `OpenCore-Install-Guide/extras/tahoe.md` — macOS 26: Tahoe
+- `OpenCore-Install-Guide/extras/ventura.md` — macOS 13: Ventura
+- `OpenCore-Install-Guide/find-hardware.md` — Finding your hardware
+- `OpenCore-Install-Guide/installation/installation-process.md` — Installation Process
+- `OpenCore-Install-Guide/installer-guide/README.md` — Creating the USB
+- `OpenCore-Install-Guide/installer-guide/legacy-mac-install.md` — Grabbing older versions of macOS/OS X
+- `OpenCore-Install-Guide/installer-guide/linux-install.md` — Making the installer in Linux
+- `OpenCore-Install-Guide/installer-guide/mac-install-dmg.md` — Legacy macOS: Disk Images
+- `OpenCore-Install-Guide/installer-guide/mac-install-pkg.md` — Legacy macOS: Offline Method
+- `OpenCore-Install-Guide/installer-guide/mac-install-recovery.md` — Legacy macOS: Online Method
+- `OpenCore-Install-Guide/installer-guide/mac-install.md` — Making the installer in macOS
+- `OpenCore-Install-Guide/installer-guide/opencore-efi.md` — Adding The Base OpenCore Files
+- `OpenCore-Install-Guide/installer-guide/windows-install.md` — Making the installer in Windows
+- `OpenCore-Install-Guide/ktext.md` — Gathering files
+- `OpenCore-Install-Guide/macos-limits.md` — Hardware Limitations
+- `OpenCore-Install-Guide/misc/credit.md` — Credits
+- `OpenCore-Install-Guide/prerequisites.md` — Getting started with OpenCore
+- `OpenCore-Install-Guide/terminology.md` — Terminology
+- `OpenCore-Install-Guide/troubleshooting/boot.md` — Understanding the macOS Boot Process
+- `OpenCore-Install-Guide/troubleshooting/debug.md` — OpenCore Debugging
+- `OpenCore-Install-Guide/troubleshooting/extended/kernel-issues.md` — Kernel Issues
+- `OpenCore-Install-Guide/troubleshooting/extended/misc-issues.md` — Miscellaneous Issues
+- `OpenCore-Install-Guide/troubleshooting/extended/opencore-issues.md` — OpenCore Boot Issues
+- `OpenCore-Install-Guide/troubleshooting/extended/post-issues.md` — Post-Install Issues
+- `OpenCore-Install-Guide/troubleshooting/extended/userspace-issues.md` — Userspace Issues
+- `OpenCore-Install-Guide/troubleshooting/kernel-debugging.md` — System Debugging: In-depth
+- `OpenCore-Install-Guide/troubleshooting/troubleshooting.md` — General Troubleshooting
+- `OpenCore-Install-Guide/why-oc.md` — Why OpenCore over Clover and others
+## OpenCore-Legacy-Patcher
+
+- `OpenCore-Legacy-Patcher/ACCEL.md` — ACCEL
+- `OpenCore-Legacy-Patcher/BOOT.md` — Booting OpenCore and macOS
+- `OpenCore-Legacy-Patcher/BUILD.md` — Building and installing OpenCore
+- `OpenCore-Legacy-Patcher/DEBUG.md` — How to debug with OpenCore
+- `OpenCore-Legacy-Patcher/FAQ.md` — FAQ
+- `OpenCore-Legacy-Patcher/HOW.md` — Boot Process with OpenCore Legacy Patcher
+- `OpenCore-Legacy-Patcher/ICNS.md` — Creating custom icons for OpenCore and Mac Boot Picker
+- `OpenCore-Legacy-Patcher/INSTALLER.md` — Creating macOS Installers
+- `OpenCore-Legacy-Patcher/ISSUES-HOLD.md` — The current hold on new issues and pull requests
+- `OpenCore-Legacy-Patcher/LICENSE.md` — OpenCore Legacy Patcher License
+- `OpenCore-Legacy-Patcher/MODELS.md` — Supported Models
+- `OpenCore-Legacy-Patcher/MONTEREY-DROP.md` — macOS Monterey
+- `OpenCore-Legacy-Patcher/PATCHEXPLAIN.md` — Explaining the patches in OpenCore Legacy Patcher
+- `OpenCore-Legacy-Patcher/POST-INSTALL.md` — Post-Installation
+- `OpenCore-Legacy-Patcher/PROCESS.md` — Background process
+- `OpenCore-Legacy-Patcher/README.md` — README
+- `OpenCore-Legacy-Patcher/SEQUOIA-DROP.md` — macOS Sequoia
+- `OpenCore-Legacy-Patcher/SONOMA-DROP.md` — macOS Sonoma
+- `OpenCore-Legacy-Patcher/START.md` — What is OpenCore?
+- `OpenCore-Legacy-Patcher/TERMS.md` — OpenCore Patcher Terminology
+- `OpenCore-Legacy-Patcher/TIMEMACHINE.md` — Restoring Time Machine backup
+- `OpenCore-Legacy-Patcher/TROUBLESHOOT-APP.md` — Application issues
+- `OpenCore-Legacy-Patcher/TROUBLESHOOT-HARDWARE.md` — Hardware issues
+- `OpenCore-Legacy-Patcher/TROUBLESHOOT-MISC.md` — Booting, installer and other issues
+- `OpenCore-Legacy-Patcher/TROUBLESHOOT-NONMETAL.md` — Non-Metal issues
+- `OpenCore-Legacy-Patcher/TROUBLESHOOTING.md` — TROUBLESHOOTING
+- `OpenCore-Legacy-Patcher/UNINSTALL.md` — Uninstall
+- `OpenCore-Legacy-Patcher/UNIVERSALCONTROL.md` — Universal Control on unsupported Macs
+- `OpenCore-Legacy-Patcher/UPDATE.md` — Updating
+- `OpenCore-Legacy-Patcher/VENTURA-DROP.md` — macOS Ventura
+- `OpenCore-Legacy-Patcher/WINDOWS.md` — Installing Windows in UEFI Mode
+## OpenCore-Post-Install
+
+- `OpenCore-Post-Install/README.md` — OpenCore Post-Install
+- `OpenCore-Post-Install/cosmetic/gui.md` — OpenCore beauty treatment
+- `OpenCore-Post-Install/cosmetic/verbose.md` — Fixing Resolution and Verbose
+- `OpenCore-Post-Install/gpu-patching/README.md` — GPU Patching in macOS
+- `OpenCore-Post-Install/gpu-patching/intel-patching/README.md` — Intel iGPU Patching
+- `OpenCore-Post-Install/gpu-patching/intel-patching/busid.md` — Patching Bus IDs
+- `OpenCore-Post-Install/gpu-patching/intel-patching/connector.md` — Patching Connector Types
+- `OpenCore-Post-Install/gpu-patching/intel-patching/vram.md` — Patching VRAM
+- `OpenCore-Post-Install/gpu-patching/legacy-intel/README.md` — Legacy Intel Setup
+- `OpenCore-Post-Install/gpu-patching/nvidia-patching/README.md` — Legacy Nvidia Patching
+- `OpenCore-Post-Install/laptop-specific/battery.md` — Battery Status
+- `OpenCore-Post-Install/misc/msr-lock.md` — Fixing CFG Lock
+- `OpenCore-Post-Install/misc/nvram.md` — Emulated NVRAM
+- `OpenCore-Post-Install/misc/rtc.md` — Fixing RTC write issues
+- `OpenCore-Post-Install/multiboot/bootcamp.md` — Installing and using BootCamp utilities
+- `OpenCore-Post-Install/multiboot/bootstrap.md` — Using LauncherOption
+- `OpenCore-Post-Install/universal/audio.md` — Fixing audio with AppleALC
+- `OpenCore-Post-Install/universal/drm.md` — Fixing DRM support and iGPU performance
+- `OpenCore-Post-Install/universal/gpu-patches.md` — GPU Patching
+- `OpenCore-Post-Install/universal/iservices.md` — Fixing iMessage and other services with OpenCore
+- `OpenCore-Post-Install/universal/memory.md` — Fixing MacPro7,1 Memory Errors
+- `OpenCore-Post-Install/universal/oc2hdd.md` — Moving OpenCore from USB to macOS Drive
+- `OpenCore-Post-Install/universal/pm.md` — Optimizing Power Management
+- `OpenCore-Post-Install/universal/security/applesecureboot.md` — Apple Secure Boot
+- `OpenCore-Post-Install/universal/security/filevault.md` — FileVault
+- `OpenCore-Post-Install/universal/security/password.md` — OpenCore Menu Password
+- `OpenCore-Post-Install/universal/security/scanpolicy.md` — ScanPolicy
+- `OpenCore-Post-Install/universal/security/vault.md` — Vault
+- `OpenCore-Post-Install/universal/security.md` — Security and FileVault
+- `OpenCore-Post-Install/universal/sleep.md` — Fixing Sleep
+- `OpenCore-Post-Install/universal/update.md` — Updating OpenCore and macOS
+- `OpenCore-Post-Install/usb/README.md` — Why should you USB map
+- `OpenCore-Post-Install/usb/amd-mapping/amd.md` — USB Mapping
+- `OpenCore-Post-Install/usb/intel-mapping/intel.md` — USB Mapping
+- `OpenCore-Post-Install/usb/manual/manual.md` — USB Mapping
+- `OpenCore-Post-Install/usb/misc/README.md` — Miscellaneous Fixes
+- `OpenCore-Post-Install/usb/misc/instant-wake.md` — GPRW/UPRW/LANC Instant Wake Patch
+- `OpenCore-Post-Install/usb/misc/keyboard.md` — Keyboard Wake Issues
+- `OpenCore-Post-Install/usb/misc/power.md` — Fixing USB Power
+- `OpenCore-Post-Install/usb/misc/shutdown.md` — Fixing Shutdown/Restart
+- `OpenCore-Post-Install/usb/system-preparation.md` — System Preparation

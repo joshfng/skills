@@ -1,0 +1,13 @@
+{
+  "name": "opencore-expert",
+  "description": "OpenCore Hackintosh and OCLP guidance backed by a vendored copy of the Dortania guides",
+  "version": "1.0.0",
+  "author": {
+    "name": "joshfng",
+    "url": "https://github.com/joshfng"
+  },
+  "homepage": "https://github.com/joshfng/opencore-expert",
+  "repository": "https://github.com/joshfng/opencore-expert",
+  "license": "CC-BY-NC-SA-4.0",
+  "keywords": ["hackintosh", "opencore", "oclp", "macos", "acpi", "kext", "smbios"]
+}
