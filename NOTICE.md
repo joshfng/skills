@@ -1,6 +1,6 @@
 # Attribution
 
-`skills/opencore-expert/references/` is a machine-generated copy of documentation
+`skills/hardware/opencore-expert/references/` is a machine-generated copy of documentation
 written and maintained by [Dortania](https://github.com/dortania) and its
 contributors. This skill is not affiliated with or endorsed by Dortania.
 
@@ -19,7 +19,7 @@ That carries two obligations this repository inherits:
   primarily for commercial advantage. Do not sell it or bundle it into a paid product.
 - **ShareAlike** — redistribute modifications under CC BY-NC-SA 4.0.
 
-`skills/opencore-expert/references/.sync-manifest.json` records the exact upstream
+`skills/hardware/opencore-expert/references/.sync-manifest.json` records the exact upstream
 commit every page was taken from. Content is reproduced verbatim apart from
 mechanical cleanup (site-generator directives converted to blockquotes, HTML
 comments and image payloads removed) performed by `scripts/sync_dortania.py`.

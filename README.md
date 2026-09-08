@@ -1,78 +1,74 @@
-# opencore-expert
+# joshfng/skills
 
-An [Agent Skill](https://agentskills.io) for OpenCore Hackintosh work: `config.plist`
-branch selection, ACPI/SSDT patching, USB mapping, SMBIOS choice, boot troubleshooting,
-and OpenCore Legacy Patcher (OCLP) on unsupported Macs.
+[Agent Skills](https://agentskills.io) for backend and platform work, in one shared repo.
 
-The skill ships a vendored, agent-readable copy of the
-[Dortania guides](https://dortania.github.io) — 202 pages across four repositories — so
-the agent routes to an exact file instead of guessing or searching the web.
+## Skills
+
+### Hardware
+
+- [opencore-expert](./skills/hardware/opencore-expert/SKILL.md) — OpenCore Hackintosh work:
+  `config.plist` branch selection, ACPI/SSDT patching, USB mapping, SMBIOS choice, boot
+  troubleshooting, and OpenCore Legacy Patcher (OCLP) on unsupported Macs. Ships a
+  vendored, agent-readable copy of the [Dortania guides](https://dortania.github.io) —
+  202 pages across four repositories — so the agent routes to an exact file instead of
+  guessing or searching the web.
 
 ## Install
 
+Two routes. Pick one: installing both leaves every skill duplicated.
+
+### Claude Code: the plugin
+
 ```bash
-# Any agent, via the skills CLI (recommended — handles updates and symlinks)
-npx skills add joshfng/opencore-expert
+/plugin marketplace add joshfng/skills
+/plugin install joshfng-skills@joshfng
+```
 
-# Claude Code plugin marketplace
-/plugin marketplace add joshfng/opencore-expert
-/plugin install opencore-expert@joshfng-skills
+A managed, read-only bundle covering every promoted skill.
 
-# From npm
-npx @joshfng/opencore-expert            # ~/.claude/skills
-npx @joshfng/opencore-expert --project  # ./.claude/skills
-npx @joshfng/opencore-expert --agent cursor --agent codex
+### Codex, and other agents: skills.sh
 
-# Manually
-git clone https://github.com/joshfng/opencore-expert
-cp -r opencore-expert/skills/opencore-expert ~/.claude/skills/
+```bash
+npx skills@latest add joshfng/skills
+```
+
+Pick the skills you want, and which coding agents to install them on. This copies
+editable skill files into the project. For a single skill:
+
+```bash
+npx skills@latest add joshfng/skills --skill=opencore-expert
+npx skills@latest update opencore-expert
 ```
 
 ## Layout
 
 ```text
-skills/opencore-expert/
-├── SKILL.md                    # routing tables + expert rules (~120 lines)
-└── references/
-    ├── INDEX.md                # every page, path → title
-    ├── .sync-manifest.json     # upstream commit per repo
-    ├── OpenCore-Install-Guide/
-    ├── OpenCore-Post-Install/
-    ├── Getting-Started-With-ACPI/
-    └── OpenCore-Legacy-Patcher/
+skills/
+├── hardware/       # bare-metal, firmware, and OS-install skills (promoted)
+├── in-progress/    # beta: public on purpose, not shipped in the plugin
+└── deprecated/     # no longer used
 scripts/
-├── sync_dortania.py            # re-pull the guides
-└── install.mjs                 # npm install path
+├── link-skills.sh          # symlink every skill into the local agent skill dirs
+├── list-skills.sh          # list every SKILL.md in the repo
+├── sync-plugin-version.mjs # mirror package.json's version into plugin.json
+└── sync_dortania.py        # re-pull the Dortania guides for opencore-expert
 ```
 
-`SKILL.md` stays small on purpose: it is loaded in full whenever the skill activates.
-The guides are read one file at a time, only when a question needs them.
+Promoted buckets ship in the Claude Code plugin and are listed in
+`.claude-plugin/plugin.json`'s `skills` array. `in-progress/` and `deprecated/` are not.
 
-## Refreshing the guides
-
-`scripts/sync_dortania.py` pulls each upstream repo's Markdown through the GitHub API,
-strips VitePress directives, HTML comments, and image payloads, and rewrites
-`references/`, `INDEX.md`, and the sync manifest. Python 3.9+, no dependencies.
+## Local development
 
 ```bash
-python3 scripts/sync_dortania.py --check              # exit 1 if upstream moved
-python3 scripts/sync_dortania.py                      # refresh everything
-python3 scripts/sync_dortania.py --repo OpenCore-Install-Guide
-python3 scripts/sync_dortania.py --ref v1.2.3         # pin to a tag or SHA
-python3 scripts/sync_dortania.py --with-master-guide  # also emit the concatenated dump
+scripts/link-skills.sh   # symlink all skills into ~/.claude/skills and ~/.agents/skills
 ```
 
-Review the diff before committing — upstream rewrites can change the routing tables in
-`SKILL.md` (for example when a new CPU generation gets its own `config.plist` page).
-
-## Scope
-
-Covers Penryn through Comet Lake, HEDT, AMD Zen/FX, and OCLP. Alder Lake (12th gen) and
-newer are **not** covered by the Dortania guides; the skill says so rather than
-improvising.
+Each entry is a symlink into this repo, so a `git pull` keeps installed skills current.
+Re-run after adding, removing, or renaming a skill.
 
 ## License and attribution
 
-The bundled guides are Dortania's, under CC BY-NC-SA 4.0 — non-commercial use only, share
-adaptations alike, attribution required. The tooling is MIT. See [NOTICE.md](NOTICE.md)
-and [LICENSE](LICENSE).
+The tooling is MIT. Bundled third-party content keeps its own license: the Dortania
+guides under `skills/hardware/opencore-expert/references/` are CC BY-NC-SA 4.0,
+non-commercial use only, share adaptations alike, attribution required. See
+[NOTICE.md](./NOTICE.md) and [LICENSE](./LICENSE).

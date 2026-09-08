@@ -3,7 +3,7 @@
 
 Downloads each upstream repo as a tarball (no git required), keeps only the
 Markdown, strips site-generator syntax that wastes tokens, and writes the tree
-into skills/opencore-expert/references/ along with INDEX.md and a manifest
+into skills/hardware/opencore-expert/references/ along with INDEX.md and a manifest
 recording the exact commit each file came from.
 
 Usage:
@@ -32,7 +32,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-REFERENCES = REPO_ROOT / "skills" / "opencore-expert" / "references"
+REFERENCES = REPO_ROOT / "skills" / "hardware" / "opencore-expert" / "references"
 MANIFEST = REFERENCES / ".sync-manifest.json"
 
 USER_AGENT = "opencore-expert-skill-sync"

@@ -1,47 +1,21 @@
 {
-  "name": "@joshfng/opencore-expert",
+  "name": "joshfng-skills",
   "version": "1.0.0",
-  "description": "Agent skill for OpenCore Hackintosh builds and OCLP, backed by a vendored copy of the Dortania guides",
-  "keywords": [
-    "agent-skill",
-    "claude-skill",
-    "skills",
-    "hackintosh",
-    "opencore",
-    "oclp",
-    "macos",
-    "acpi",
-    "kext",
-    "smbios",
-    "dortania"
-  ],
-  "homepage": "https://github.com/joshfng/opencore-expert#readme",
-  "bugs": "https://github.com/joshfng/opencore-expert/issues",
+  "private": true,
+  "description": "joshfng's agent skills",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joshfng/opencore-expert.git"
+    "url": "git+https://github.com/joshfng/skills.git"
   },
-  "license": "CC-BY-NC-SA-4.0",
-  "author": "joshfng",
+  "license": "MIT",
   "type": "module",
-  "bin": {
-    "opencore-expert": "scripts/install.mjs"
+  "scripts": {
+    "check-plugin-version": "node scripts/sync-plugin-version.mjs --check",
+    "sync-plugin-version": "node scripts/sync-plugin-version.mjs",
+    "sync-dortania": "python3 scripts/sync_dortania.py",
+    "check-sources": "python3 scripts/sync_dortania.py --check"
   },
-  "files": [
-    "skills/",
-    "scripts/",
-    "NOTICE.md",
-    "LICENSE",
-    "README.md"
-  ],
   "engines": {
     "node": ">=18"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "scripts": {
-    "sync": "python3 scripts/sync_dortania.py",
-    "check-sources": "python3 scripts/sync_dortania.py --check"
   }
 }
