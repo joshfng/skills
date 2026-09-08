@@ -1,7 +1,7 @@
 {
   "name": "joshfng-skills",
   "version": "1.0.0",
-  "description": "joshfng's agent skills: OpenCore Hackintosh and OCLP guidance backed by a vendored copy of the Dortania guides.",
+  "description": "joshfng's agent skills for backend and platform work: documentation-first workflow, plus OpenCore Hackintosh and OCLP guidance backed by a vendored copy of the Dortania guides.",
   "author": {
     "name": "joshfng",
     "url": "https://github.com/joshfng"
@@ -9,6 +9,6 @@
   "homepage": "https://github.com/joshfng/skills",
   "repository": "https://github.com/joshfng/skills",
   "license": "MIT",
-  "keywords": ["hackintosh", "opencore", "oclp", "macos", "acpi", "kext", "smbios"],
-  "skills": ["./skills/hardware/opencore-expert"]
+  "keywords": ["documentation", "workflow", "hackintosh", "opencore", "oclp", "macos", "acpi", "kext", "smbios"],
+  "skills": ["./skills/engineering/rtfm", "./skills/hardware/opencore-expert"]
 }

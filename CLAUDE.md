@@ -2,6 +2,7 @@
 
 A shared repo of agent skills. Skills live in bucket folders under `skills/`:
 
+- `engineering/`: daily code work
 - `hardware/`: bare-metal, firmware, and OS-install skills
 - `in-progress/`: beta, public on purpose, feedback wanted, not shipped in the plugin
 - `deprecated/`: no longer used

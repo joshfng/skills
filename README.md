@@ -4,6 +4,12 @@
 
 ## Skills
 
+### Engineering
+
+- [rtfm](./skills/engineering/rtfm/SKILL.md) — read the project's own documentation
+  before planning, answering, or writing code. Triggers on `/rtfm`, `RTFM`, or any ask to
+  check the docs.
+
 ### Hardware
 
 - [opencore-expert](./skills/hardware/opencore-expert/SKILL.md) — OpenCore Hackintosh work:
@@ -44,6 +50,7 @@ npx skills@latest update opencore-expert
 
 ```text
 skills/
+├── engineering/    # daily code work (promoted)
 ├── hardware/       # bare-metal, firmware, and OS-install skills (promoted)
 ├── in-progress/    # beta: public on purpose, not shipped in the plugin
 └── deprecated/     # no longer used
