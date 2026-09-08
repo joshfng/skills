@@ -18,8 +18,8 @@
       "repo": "dortania/OpenCore-Install-Guide"
     },
     "OpenCore-Legacy-Patcher": {
-      "commit": "1500ba6ed83934ea52bb13b9e3a2a1710bb96dd9",
-      "commit_date": "2026-08-13T18:23:10Z",
+      "commit": "af9b49ac0539c684590ac35c7d695c7e706f6aea",
+      "commit_date": "2026-08-23T23:32:24Z",
       "license": "See the upstream repository. Dortania guides are CC BY-NC-SA 4.0.",
       "pages": 31,
       "ref": "main",
