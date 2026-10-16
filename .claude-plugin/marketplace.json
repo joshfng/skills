@@ -9,9 +9,19 @@
     {
       "name": "joshfng-skills",
       "source": "./",
-      "description": "joshfng's agent skills for backend and platform work: documentation-first workflow, plus OpenCore Hackintosh and OCLP guidance backed by a vendored copy of the Dortania guides.",
+      "description": "joshfng's agent skills for backend and platform work: documentation-first workflow and off-the-record side quests, plus OpenCore Hackintosh and OCLP guidance backed by a vendored copy of the Dortania guides.",
       "category": "reference",
-      "keywords": ["documentation", "workflow", "hackintosh", "opencore", "oclp", "macos", "acpi", "kext", "smbios"]
+      "keywords": [
+        "documentation",
+        "workflow",
+        "hackintosh",
+        "opencore",
+        "oclp",
+        "macos",
+        "acpi",
+        "kext",
+        "smbios"
+      ]
     }
   ]
 }

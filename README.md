@@ -9,6 +9,9 @@
 - [rtfm](./skills/engineering/rtfm/SKILL.md) — read the project's own documentation
   before planning, answering, or writing code. Triggers on `/rtfm`, `RTFM`, or any ask to
   check the docs.
+- [side-quest](./skills/engineering/side-quest/SKILL.md) — an off-the-record,
+  context-aware tangent that leaves nothing in memory, docs, or the main work.
+  Triggers on `/side-quest` or any mention of a side quest.
 
 ### Hardware
 

@@ -14,15 +14,17 @@ files it loads on demand. The `SKILL.md` frontmatter needs `name` and `descripti
 `description` is what the harness matches on, so it must name the trigger conditions
 explicitly.
 
-Every skill in a **promoted** bucket (`hardware/`, and any bucket added alongside it)
+Every skill in a **promoted** bucket (`engineering/`, `hardware/`, and any bucket added
+alongside them)
 must have:
 
 1. An entry in the top-level `README.md`, with the skill name linked to its `SKILL.md`.
 2. An entry in its bucket's `README.md`, same link format.
 3. An entry in `.claude-plugin/plugin.json`'s `skills` array.
 
-Skills in `in-progress/` and `deprecated/` must appear in **none** of those. The Claude
-Code plugin ships exactly the promoted set.
+Skills in `in-progress/` and `deprecated/` are listed only in their own bucket's
+`README.md`, never in the top-level `README.md` or `plugin.json`. The Claude Code plugin
+ships exactly the promoted set.
 
 `SKILL.md` files stay small: they are loaded in full whenever the skill activates. Bulk
 content belongs in sibling files the skill routes to, read one at a time.
